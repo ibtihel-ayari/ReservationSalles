@@ -1,0 +1,18 @@
+<!-- calendar.component.html -->
+<div class="calendar-container">
+
+    <div class="calendar">
+      
+      <div *ngFor="let reservation of reservations" class="reservation">
+        <p>{{ reservation.dateHeureDebut | date }} - {{ reservation.dateHeureFin | date }}</p>
+        <!-- Afficher d'autres détails de réservation si nécessaire -->
+      </div>
+    </div>
+  </div>
+  
+
+
+  
+  
+
+  

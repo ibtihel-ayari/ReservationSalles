@@ -1,0 +1,66 @@
+/* calendar.component.css */
+
+/* Ajoutez ce style CSS dans votre fichier CSS global ou dans le fichier de style de votre composant */
+
+body {
+  background: #fad390;
+  font-family: 'Questrial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calendar {
+  width: 800px; /* Ajustez la largeur selon vos besoins */
+  /* Autres styles CSS restants */
+}
+
+
+.calendar {
+  display: inline-grid;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 40px 30px -20px rgba(0, 0, 0, 0.3);
+}
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  color: #999;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.weekdays span {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.reservation {
+  margin-bottom: 20px;
+}
+
+.reservation p {
+  font-size: 16px;
+  margin: 0;
+}
+
+
+

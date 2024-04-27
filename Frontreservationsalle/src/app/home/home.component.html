@@ -1,0 +1,81 @@
+
+<section class="text-gray-400 body-font bg-gray-900">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-20">
+        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">Un espace de travail flexible et adapté à vos besoins</h1>
+          <div class="h-1 w-20 bg-yellow-500 rounded"></div>
+        </div>
+       
+     
+
+
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://th.bing.com/th/id/R.92af8d1e5f2ec6fa7e0e1ccb208cb1ef?rik=wBEbVvWUSaqLNA&pid=ImgRaw&r=0" alt="content">
+            <h3 class="tracking-widest text-yellow-400 text-xs font-medium title-font">Salle de réunion</h3>
+            <h2 class="text-lg text-white font-medium title-font mb-4">Des lieux disponibles à l'heure pour se rencontrer, collaborer et organiser des entretiens. Au besoin, notre équipe sur place est là pour vous assister.</h2>
+          
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://th.bing.com/th/id/OIP.9EPubPG0RXdu-aN_Ml_1-AHaE9?rs=1&pid=ImgDetMain" alt="content">
+            <h3 class="tracking-widest text-yellow-400 text-xs font-medium title-font">Salle d'entretien</h3>
+            <h2 class="text-lg text-white font-medium title-font mb-4"> Des espaces professionnels et privés pour les entretiens d'embauche, les évaluations annuelles ou les groupes de recherche.</h2>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://th.bing.com/th/id/R.7f1d2de16ebb90bae326b76f3653449f?rik=qYfVLiKVEkTEww&pid=ImgRaw&r=0" alt="content">
+            <h3 class="tracking-widest text-yellow-400 text-xs font-medium title-font">Salle de formation</h3>
+            <h2 class="text-lg text-white font-medium title-font mb-4">              La solution idéale si vous avez besoin d'un espace spécialement conçu avec des bureaux, des tableaux blancs et des écrans pour vos formations.</h2>
+          
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://images.squarespace-cdn.com/content/v1/5e9d427c0f942a3a15106363/1592380442683-1IDHMONSEMUXADDKJEO4/nex1_9802.jpg" alt="content">
+            <h3 class="tracking-widest text-yellow-400 text-xs font-medium title-font">Salle de conseil</h3>
+            <h2 class="text-lg text-white font-medium title-font mb-4">Un bureau privé et professionnel, accessible à la demande. Parfait quand vous avez besoin de vous concentrer pour travailler au mieux.</h2>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">Nos salles disponibles</h1>
+        <div class="h-1 w-20 bg-yellow-500 rounded"></div>
+      </div>
+
+
+      <div class="flex flex-wrap -m-4">
+        @for(salle of salles; track salle.id){
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+        
+              <img class="h-40 rounded w-full object-cover object-center mb-6" src="{{salle.photos}}" alt="content">
+              <h3 class="tracking-widest text-yellow-400 text-xs font-medium title-font">{{salle.type}}</h3>
+              <h2 class="text-lg text-white font-medium title-font mb-4">{{salle.description}}</h2>
+              <p class="leading-relaxed text-base">
+               
+                <strong>Nom:</strong> {{salle.nom}}<br>
+                <strong>Capacité:</strong> {{salle.capacite}}<br>
+                <strong>Equipements:</strong>{{salle.equipements}}<br>
+                <strong>Disponibilites:</strong>{{salle.disponibilites}}<br>
+               
+              </p>
+              
+              <a routerLink="/contact"> <button class="tracking-widest text-yellow-400 text-xs font-medium title-font">Réserver maintenant</button></a> 
+            </div>
+          </div>
+        }
+      
+        
+      </div>
+      
+    </div>
+  </section>
